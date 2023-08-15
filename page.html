@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <section class="mx-10 md:mx-20 mb-10">
+        <main class="h-[500px] w-full  bg-yellow-200 flex flex-col md:flex md:flex-row mb-10">
+
+            <div class="md:w-[40%] w-full  h-full bg-red-200 flex  items-center justify-between px-5">
+
+
+                <p class="text-3xl font-semibold">What Our Students <br> Say About Us</p>
+
+                <div class=" flex gap-5">
+                    <box-icon class="w-16 h-16" name='left-arrow-circle'></box-icon>
+                    <box-icon class="w-16 h-16" name='right-arrow-circle'></box-icon>
+                </div>
+            </div>
+            <div class="md:w-[60%] w-full h-full bg-red-300 flex items-center justify-center gap-2">
+               
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      
+                    </div>
+                    <div class="swiper-button-next ml-10 bg-red-300 "></div>
+                    
+                    <div class="swiper-button-prev"></div>
+                  </div>
+
+
+
+            </div>
+
+
+        </main>
+    </section>
+
+<div class="">
+<button class=" bg-red-200 rounded-md border-2 border-black w-20 h-10">Hi</button>
+<button class=" swiper-button-next  bg-red-200 rounded-md border-2 border-black w-20 h-10">No</button>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+          freeMode: true,
+        
+       
+        });
+      </script>
+</body>
+</html>
