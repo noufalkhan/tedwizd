@@ -32,12 +32,43 @@
 
 </head>
 
-<body class="font-[Poppins]">
+<body class="font-[Poppins] ] ">
+    
 
     <!-- navbar  -->
 
+<nav class=" md:px-20 z-20 items-center h-[60px] shadow-lg mx-3 flex justify-between fixed w-full bg-red-200 mb-[60px]">
+    <div class="flex gap-2 justify-center items-center">
+        <img class="md:hidden" src="./img/burger.svg" alt="">
+        <img class="" src="./img/logo.svg" alt="">
+    </div>
 
-    <section class="mx-3 md:mx-20">
+   <ul class="md:flex hidden gap-10  ">
+    <li>Home</li>
+    <li>Courses</li>
+    <li>Instructors</li>
+    <li>Schedules</li>
+    <li>Contact us</li>
+   </ul>
+    
+   <div class="flex gap-3">
+    <img class="hidden md:block" src="./img/search.svg" alt="">
+    <button class="hidden md:block" >login</button>
+    <button class="hidden md:block">register</button>
+    <img  src="./img/usermneu.svg" alt="">
+   </div>
+</nav>
+
+<!-- main main  -->
+<main class="pt-[60px]">
+
+
+
+
+
+
+<!-- -----------------------------  -->
+    <section class="mx-3 md:mx-20 ">
         <main class="md:flex bg-yellow200 h-full relative w-full overflow-hidden  ">
 
 
@@ -64,25 +95,25 @@
         <div class=" mx-auto mt-[60px] flex flex-wrap gap-4 md:gap-0 mb-20 justify-center md:justify-between">
             <div class="rounded bg-[#ddffff]  flex justify-center items-center gap-4 px-4 py-2">
                 <img class="w-[30px] h-[30px] rounded-full" src="./img/profile3.jpg" alt="" />
-                <p class="md:text-base text-xs" >Problem Solving</p>
+                <p class="md:text-base text-xs">Problem Solving</p>
             </div>
             <div class="rounded bg-[#ddffff]  flex justify-center items-center gap-4 px-4 py-2">
                 <img class="w-[30px] h-[30px] rounded-full" src="./img/profile3.jpg" alt="" />
-                <p class="md:text-base text-xs" >Problem Solving</p>
+                <p class="md:text-base text-xs">Problem Solving</p>
             </div>
             <div class="rounded bg-[#ddffff]  flex justify-center items-center gap-4 px-4 py-2">
                 <img class="w-[30px] h-[30px] rounded-full" src="./img/profile3.jpg" alt="" />
-                <p class="md:text-base text-xs" >Problem Solving</p>
+                <p class="md:text-base text-xs">Problem Solving</p>
             </div>
             <div class="rounded bg-[#ddffff]  flex justify-center items-center gap-4 px-4 py-2">
                 <img class="w-[30px] h-[30px] rounded-full" src="./img/profile3.jpg" alt="" />
-                <p class="md:text-base text-xs" >Problem Solving</p>
+                <p class="md:text-base text-xs">Problem Solving</p>
             </div>
             <div class="rounded bg-[#ddffff]  flex justify-center items-center gap-4 px-4 py-2">
                 <img class="w-[30px] h-[30px] rounded-full" src="./img/profile3.jpg" alt="" />
-                <p class="md:text-base text-xs" >Problem Solving</p>
+                <p class="md:text-base text-xs">Problem Solving</p>
             </div>
-            
+
 
         </div>
     </section>
@@ -391,7 +422,7 @@
         <!-- Mobile View Only -->
         <div class="flex justify-between pt-5 pb-10 px-1 md:hidden">
             <p class="text-2xl font-semibold ">Learn New Skills within 2 hours</p>
-            <div class="bg-green-500 px-5 flex justify-center items-center rounded-3xl text-xl text-white">Sort</div>
+            <div class="bg-green-500 px-2 flex justify-center items-center rounded-xl text-xl text-white">Sort</div>
         </div>
         <!-- sort card1 -->
         <!-- sort main  -->
@@ -1119,6 +1150,7 @@
             </div>
         </div>
     </footer>
+</main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
